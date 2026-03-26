@@ -29,14 +29,27 @@ change in their communities and beyond.
 
 # 1. Remove all new lines and punctuation, and convert to all lowercase.
 #### YOUR CODE HERE
-
+def fix_text() :
+    global text
+    text = text.replace("" \
+"", " ")
+    text = text.replace(","," ")
+    text = text.replace("."," ")
+    return text
 # 2. Use the `.split()` method to split into a list of words.
 #### YOUR CODE HERE
-
+word_list = text.split
 # 3. Initialize an empty dictionary to keep track of word counts.
 #### YOUR CODE HERE
-
+word_count = {}
 # 4. loop through the list of words and update the dictionary. If the word is
 # already a key in the dicitonary, increment the count. If not, add the new key
 # with a count of 1.
 #### YOUR CODE HERE
+for word in word_list() :
+    if word in word_count :
+        word_count[word] += 1
+    elif word not in word_count :
+        word_count[word] = 1
+
+print (word_count)
